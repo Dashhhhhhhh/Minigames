@@ -13,7 +13,6 @@ int main(){
 
     //do loop for restart
     do{
-        srand(time(NULL));
         mainLoop = true; 
         rest = false;
         int x;

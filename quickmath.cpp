@@ -14,7 +14,6 @@ int main(){
     int in;
     int ans;
     do{
-        srand(time(NULL));
         x = rand() % 10 + 5;
         game = true;
         mainLoop = true; 
