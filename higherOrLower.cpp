@@ -2,7 +2,6 @@
 #include "windows.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 #include <string>
 
 int main(){
@@ -11,17 +10,26 @@ int main(){
     bool game = true;
     bool mainLoop = false;
     std::string restart;
+
+    //do loop for restart
     do{
+        srand(time(NULL));
         mainLoop = true; 
         rest = false;
         int x;
         game = true; 
-        x =  rand() % 1000 + 1; // Note: 1+rand()%6 is biased
+
+        //random
+        x =  rand() % 1000 + 1;
+
+        // game loop
         while(game){
             std::cout << "Welcome to Higher or Lower!" << std::endl;
             Sleep(1000);
             std::cout << "Please state a number between 1-1000" << std::endl;
             std::cin >> in;   
+
+            // main while loop
             while(mainLoop){
                 game = false;
                 if(in > x){
@@ -41,5 +49,4 @@ int main(){
             }
         }
     }while(rest);
-
 } 
