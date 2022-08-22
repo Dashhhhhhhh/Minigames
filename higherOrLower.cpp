@@ -6,7 +6,6 @@
 #include <string>
 
 int main(){
-    srand(time(NULL));
     int in;
     bool rest = false;
     bool game = true;
