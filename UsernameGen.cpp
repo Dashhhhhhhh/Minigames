@@ -25,7 +25,7 @@ int main(){
         // restart func
         getline(std::cin, in);
         restart = true;
-        Sleep(800);
+        Sleep(1000);
     }while(restart);
 
 }
