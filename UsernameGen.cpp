@@ -16,7 +16,7 @@ int main(){
         int Ran2 = rand() % 15;
         // array of words
         std::array<std::string, 15> Part1 = { std::string("Kled"), "Captain", "Schlong", "Fiddle", "Loli", "Dong","Dingle","Slimy","Slow","Master","Balls","Mega","Nutz","Faze","Sticky"};
-        std::array<std::string, 15> Part2 = { std::string("Gecko"), "Main", "Camper", "Licous", "Moist", "Only","Smasher","Tingler","Sticky","Fart","Sticky","Booty","Buster","Dream","Women"};
+        std::array<std::string, 15> Part2 = { std::string("Gecko"), "Main", "Camper", "Licous", "Moist", "Only","Smasher","Tingler","Sticky","Fart","Sticky","Booty","Buster","xDream","Women"};
 
         num = rand() % 1000;
 
@@ -25,7 +25,7 @@ int main(){
         // restart func
         getline(std::cin, in);
         restart = true;
-        Sleep(1000);
+        Sleep(800);
     }while(restart);
 
 }
