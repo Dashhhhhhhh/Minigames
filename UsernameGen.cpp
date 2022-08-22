@@ -21,11 +21,13 @@ int main(){
         num = rand() % 1000;
 
         std::cout << Part1[Ran1] << Part2[Ran2] << num;
+        Sleep(1000);
+        
         std::string in;
         // restart func
+        
         getline(std::cin, in);
         restart = true;
-        Sleep(1000);
     }while(restart);
 
 }
