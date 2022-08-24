@@ -23,6 +23,8 @@ int main(){
 
         // game loop
         while(game){
+            
+            // game talkin to u
             std::cout << "Welcome to Higher or Lower!" << std::endl;
             Sleep(1000);
             std::cout << "Please state a number between 1-1000" << std::endl;
@@ -38,6 +40,8 @@ int main(){
                     printf("higher\n");
                     std::cin >> in;
                 } else{
+                    
+                    // auto restart...
                     mainLoop = false;
                     printf("YOU WIN\n");
                     Sleep(1000);
